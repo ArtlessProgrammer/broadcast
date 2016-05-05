@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>brodcast-vertical</title>
+	<style>
+		.index_content_main_listdiv{ width:279px; height:65px; position:absolute; top:174px; left:432px; }
+		.index_content_main_listdiv ul{padding: 0; margin: 0;}
+	</style>
+</head>
+<body>
+	<div id="divList" class="index_content_main_listdiv">
+        <ul>
+            <li>
+            	<span>1</span>
+            </li>
+            <li>
+            	<span>2</span>
+            </li>
+            <li>
+            	<span>3</span>
+            </li>
+            <li>
+            	<span>4</span>
+            </li>
+            <li>
+            	<span>5</span>
+            </li>
+            <li>
+            	<span>6</span>
+            </li>
+            <li>
+            	<span>7</span>
+            </li>
+            <li>
+            	<span>8</span>
+            </li>
+        </ul>
+    </div>
+    <script src="jquery-1.9.1.min.js"></script>
+    <script src="ZBroadCast-vertical.js"></script>
+    <script>
+		$("#divList").RenderBroadCast({
+            movelength: 1
+          , moveinterval: 50
+          , scrolltype: 1//不到高度不滚动
+        })
+    </script>
+</body>
+</html>

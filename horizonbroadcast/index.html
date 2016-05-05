@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>brodcast-horison</title>
+	<style>
+		.index_content_main_listdiv{ width:79px; height:25px; position:absolute; top:174px; left:432px; border: solid 1px #ed8;}
+        .wsn{white-space:nowrap}/*禁止换行*/
+	</style>
+</head>
+<body>
+	<div id="divList" class="index_content_main_listdiv">
+        <div class="wsn">1;2;3;4;5;6;7;</div>
+    </div>
+    <script src="jquery-1.9.1.min.js"></script>
+    <script src="ZBroadCast-horizontal.js"></script>
+    <script>
+		$("#divList").RenderBroadCast({
+            movelength: 1
+          , moveinterval: 50
+          , scrolltype: 1//不到高度不滚动
+        })
+    </script>
+</body>
+</html>
